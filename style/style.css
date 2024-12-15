@@ -1,0 +1,180 @@
+body {
+    background-color: #16111A;
+    display: flex;
+      font-family: "Open Sans", sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+    width: auto;
+}
+
+.advice-box {
+    background-color: #2D2039;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+    margin-top: 20px;
+    width: 350px;
+    border-radius: 10%;
+    position: relative;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.topDiv {
+    display: flex;
+    height: 30px;
+    padding-inline-start: 10px;
+    justify-content: center;
+}
+
+#adviceNr {
+    align-self: center;
+    margin-bottom: 20px;
+    color: #A638F6;
+    
+}
+.middleDiv {
+    height: 200px;
+    max-height: 260px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+#advice {
+    text-align: center;
+    color: whitesmoke;
+    word-wrap: break-word;
+    text-overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: clamp(1rem,2svw,1.5rem);
+    
+}
+
+.dividerDiv {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    bottom: 0px;
+}
+
+
+#divider {
+    height: 11px;
+}
+
+.bottomDiv {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.quotesDiv {
+    background-color: #A638F6;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    bottom: -35px;
+}
+
+
+#quoteButton {
+    color: #A638F6;
+    width: 100%;
+    height: 100%;
+    background-color: #A638F6;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#quoteButton img {
+    width: 50%;
+    transition: 0.3s ease;
+
+}
+
+#quoteButton img:hover {
+    transform: scale(1.1);
+}
+
+#quoteButton:hover {
+    box-shadow: 0 0 15px #A638F6;
+    transition: 0.3s ease;
+}
+
+
+
+#techImg {
+    padding-top: 45px;
+    height: 70px;
+
+}
+
+.logoDiv {
+    margin-top: 70px;
+}
+
+.portfolio-link {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-decoration: none;
+}
+
+.portfolio-link button {
+    height: 100%;
+    width: 100%;
+    border-radius: 7px;
+    background-color: #A638F6;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    text-decoration: none;
+    border-style:1px solid;
+    text-decoration: none;
+}
+
+.portfolio-link button:hover {
+    cursor: pointer;
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .advice-box {
+        order: 2;
+
+    }
+
+    .logoDiv {
+        order: 1;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    #techImg {
+        padding-top: 0px;
+        height: 70px;
+    
+    }
+}
